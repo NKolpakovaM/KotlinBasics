@@ -4,8 +4,10 @@ fun main () {
     var bookedTablesTomorrow = 9
     var freeTablesToday = tablesNumber - bookedTablesToday
     var freeTablesTomorrow = tablesNumber - bookedTablesTomorrow
-    val availabilityToday = freeTablesToday == 0
-    val availabilityTomorrow = freeTablesTomorrow == 0
-    println("Доступность столиков на сегодня: $availabilityToday")
-    println("Доступность столиков на завтра: $availabilityTomorrow")
+    if (freeTablesToday > 0) {
+        println("Доступность столиков на сегодня: true")
+    } else println("Доступность столиков на сегодня: false")
+    if (freeTablesTomorrow >0) {
+        println("Доступность столиков на завтра: true")
+    } else println("Доступность столиков на завтра: false")
 }
