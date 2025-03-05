@@ -1,3 +1,6 @@
+val RIGHT_NUMBER1 = 3
+val RIGHT_NUMBER2 = 7
+
 fun main() {
     println("Угадайте два числа от 0 до 42 для участия в лотерее.")
     println("Введите первое число:")
@@ -10,7 +13,8 @@ fun main() {
         return
     }
 
-    val correctGuesses = (input1 == RIGHT_NUMBER1 || input1 == RIGHT_NUMBER2) + (input2 == RIGHT_NUMBER1 || input2 == RIGHT_NUMBER2)
+    val correctGuesses = (if (input1 == RIGHT_NUMBER1 || input1 == RIGHT_NUMBER2) 1 else 0) +
+            (if (input2 == RIGHT_NUMBER1 || input2 == RIGHT_NUMBER2) 1 else 0)
 
     when (correctGuesses) {
         2 -> println("Поздравляем! Вы выиграли главный приз!")
@@ -18,5 +22,3 @@ fun main() {
         else -> println("Неудача! Выигрышные числа: $RIGHT_NUMBER1 и $RIGHT_NUMBER2")
     }
 }
-val RIGHT_NUMBER1 = 3
-val RIGHT_NUMBER2 = 7
