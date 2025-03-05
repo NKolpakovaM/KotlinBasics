@@ -22,3 +22,4 @@ fun main() {
         else -> println("Неудача! Выигрышные числа: $RIGHT_NUMBER1 и $RIGHT_NUMBER2")
     }
 }
+
