@@ -7,7 +7,7 @@ fun main () {
     if (freeTablesToday > 0) {
         println("Доступность столиков на сегодня: true")
     } else println("Доступность столиков на сегодня: false")
-    if (freeTablesTomorrow >0) {
+    if (freeTablesTomorrow > 0) {
         println("Доступность столиков на завтра: true")
     } else println("Доступность столиков на завтра: false")
 }
