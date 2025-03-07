@@ -20,8 +20,8 @@ fun main() {
     val isWeatherGood = readln().toBooleanStrictOrNull() ?: false
 
     val sailAllowed = (
-            (isShipDamaged !=NO_DAMAGE && shipStaffNumber in MIN_STAFF_NUMBER..MAX_STAFF_NUMBER && provisionBoxesNumber > MIN_PROVISION_BOXES) ||
-                    (isShipDamaged !=NO_DAMAGE && shipStaffNumber == MAX_STAFF_NUMBER && isWeatherGood == GOOD_WEATHER && provisionBoxesNumber >= MIN_PROVISION_BOXES)
+            (isShipDamaged != NO_DAMAGE && shipStaffNumber in MIN_STAFF_NUMBER..MAX_STAFF_NUMBER && provisionBoxesNumber > MIN_PROVISION_BOXES) ||
+                    (isShipDamaged != NO_DAMAGE && shipStaffNumber == MAX_STAFF_NUMBER && isWeatherGood == GOOD_WEATHER && provisionBoxesNumber >= MIN_PROVISION_BOXES)
             )
     println("Может ли корабль отправиться в плавание? Ответ: $sailAllowed")
 }
