@@ -7,6 +7,6 @@ fun main () {
     if (input == sum) {
         println("Добро пожаловать!")
     } else {
-        println("Доступ запрещен.")
+        println("Доступ запрещен")
     }
 }
