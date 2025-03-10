@@ -1,5 +1,4 @@
 const val timeFraction = 60
-
 fun main() {
     val departureMinutes = 39
     val departureHour = 9
