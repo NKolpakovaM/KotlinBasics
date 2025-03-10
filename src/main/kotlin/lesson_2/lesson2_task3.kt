@@ -1,7 +1,8 @@
+const val timeFraction = 60
+
 fun main() {
-    val departureHour = 9
     val departureMinutes = 39
-    val timeFraction = 60
+    val departureHour = 9
     val timePassed = (departureHour * timeFraction) + departureMinutes
     val travelTime = 457
     val overallTime = timePassed + travelTime
